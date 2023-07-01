@@ -1,4 +1,12 @@
-code, pre {
+code {
+  padding: 7px;
+  font-size: $code-font-size;
+  font-family: $code-font-family;
+  background: $deputy-color;
+}
+
+pre {
+  color: #e6e6e6;
   padding: 7px;
   font-size: $code-font-size;
   font-family: $code-font-family;

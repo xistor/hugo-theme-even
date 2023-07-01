@@ -5,7 +5,7 @@
 // ========== Theme Color ========== //
 // Config here to change theme color
 // Default | Mint Green | Cobalt Blue | Hot Pink | Dark Violet
-$theme-color-config: 'Default';
+$theme-color-config: 'Cobalt Blue';
 
 // Default theme color map
 $theme-color-map: (
@@ -29,6 +29,7 @@ $theme-color: nth($theme-color-list, 1) !default;
 // Deputy theme color of the site.
 $deputy-color: nth($theme-color-list, 2) !default;
 
+$code-bg-color: #383832 !default;
 
 // ========== Color ========== //
 $black: #0a0a0a !default;
@@ -40,22 +41,22 @@ $dark-gray: #8a8a8a !default;
 
 // ========== Global ========== //
 // Text color of the body.
-$global-font-color: #34495e !default;
+$global-font-color: #0e0f0f !default;
 
 // Font size attribute applied to '<html>' and '<body>'.
 $global-font-size: 16px !default;
 
 // Global width of '<body>'.
-$global-body-width: 800px !default;
+$global-body-width: 850px !default;
 
 // Padding of container main
-$global-container-padding: 0 20px !default;
+$global-container-padding: 0 15px !default;
 
 // Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px.
-$global-lineheight: 1.5 !default;
+$global-lineheight: 1.7 !default;
 
 // Font family of the site.
-$global-font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
+$global-font-family: 'LXGW WenKai Screen', 'Helvetica Neue', Arial, sans-serif !default;
 
 // Serif font family of the site.
 $global-serif-font-family: Athelas, STHeiti, Microsoft Yahei, serif !default;
@@ -258,7 +259,7 @@ $code-type-list: (
 ) !default;
 
 // Color of the code background.
-$code-background: $deputy-color !default;
+$code-background: $code-bg-color !default;
 
 
 // ========== Pagination ========== //
@@ -288,7 +289,7 @@ $copyright-margin: 10px 0 !default;
 $archive-margin: 2em 0px !default;
 
 // Max width of the archive.
-$archive-max-width: 550px !default;
+$archive-max-width: 600px !default;
 
 // Font size of the archive name.
 $archive-name-font-size: 30px !default;
@@ -297,7 +298,7 @@ $archive-name-font-size: 30px !default;
 $collection-title-font-size: 28px !default;
 
 // Padding of the archive post.
-$archive-post-padding: 3px 20px !default;
+$archive-post-padding: 8px 20px !default;
 
 // Padding of the archive post in mobile.
 $archive-post-mobile-padding: 5px 10px !default;
