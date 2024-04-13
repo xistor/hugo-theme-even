@@ -12,6 +12,9 @@
     {{- end -}}
   </title>
   {{ partial "head.html" . }}
+  {{- if (in (slice (getenv "HUGO_ENV") hugo.Environment) "production") | and .Site.Params.umami.enabled -}}
+    <script async defer data-website-id="{{ .Site.Params.umami.id }}" src="{{ .Site.Params.umami.js }}"></script>
+  {{- end -}}
 </head>
 <body>
   {{ partial "slideout.html" . }}
