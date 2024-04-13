@@ -97,6 +97,10 @@
   {{ template "_internal/google_analytics_async.html" . }}
 {{- end -}}
 
+{{- if (in (slice (getenv "HUGO_ENV") hugo.Environment) "production") | and .Site.Params.umami.enabled -}}
+<script defer src="{{ .Site.Params.umami.js }}" data-website-id="{{ .Site.Params.umami.id }}"></script>
+{{- end -}}
+
 {{- with .Site.Params.baiduAnalytics -}}
 <script id="baidu_analytics">
   var _hmt = _hmt || [];
