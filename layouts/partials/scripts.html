@@ -95,16 +95,6 @@
 <!-- Analytics -->
 {{- if (in (slice (getenv "HUGO_ENV") hugo.Environment) "production") | and .Site.GoogleAnalytics -}}
   {{ template "_internal/google_analytics_async.html" . }}
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M23R6PBNFE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-M23R6PBNFE');
-  </script>
-
 {{- end -}}
 
 {{- if (in (slice (getenv "HUGO_ENV") hugo.Environment) "production") | and .Site.Params.umami.enabled -}}
